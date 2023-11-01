@@ -1,0 +1,111 @@
+@import '~antd/es/style/themes/default.less';
+
+.page {
+
+  margin: -24px;
+}
+
+.listItemMetaTitle {
+  font-family: 'Microsoft Tai Le Bold', 'Microsoft Tai Le Regular', 'Microsoft Tai Le', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.847058823529412);
+}
+
+.listItemExtra {
+  width: 272px;
+  height: 1px;
+}
+
+.selfTrigger {
+  margin-left: 12px;
+}
+
+@media screen and (max-width: @screen-xs) {
+  .selfTrigger {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .selfTrigger {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .listItemExtra {
+    width: 0;
+    height: 1px;
+  }
+}
+
+.extra {
+  margin-top: 16px;
+  color: @text-color-secondary;
+  line-height: 22px;
+  display: flex;
+
+  &>em {
+    margin-left: 16px;
+    font-style: normal;
+  }
+}
+
+.container {
+  background-image: url(../assets/u1102.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 120px;
+  // margin: -24px;
+}
+
+.record {
+  height: 56px;
+  background: inherit;
+  background-color: #F2F2F2;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: normal;
+  font-family: 'Arial Normal', 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.tagList {
+  margin-right: 40px;
+
+  :hover {
+    cursor: pointer;
+    color: #333333;
+  }
+}
+
+.content {
+  background-color: #FFFFFF;
+}
+
+.searchs {
+  :global {
+    .ant-form-item-label>label {
+      color: #FFFFFF !important;
+    }
+
+    .ant-select-selection-item {
+      color: white;
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background-color: #3d7add00;
+    }
+  }
+}
+
+.description {
+  width: 60%;
+}

@@ -1,0 +1,133 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+  // text-align: center;
+}
+
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+  
+}
+
+.content {
+  width: 100%;
+  // flex: 1;
+  padding: 32px 0;
+
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+    // background-image: url('bg2.png');
+    background-repeat: no-repeat;
+    // background-position: center 110px;
+    background-size: 100%;
+    // opacity: 0.5;    
+    // background-color: rgba(240, 248, 255, 0.338);
+  }
+
+  .content {
+    padding: 32px 0 24px;
+    text-align: center;
+   
+  }
+}
+
+.top {
+  text-align: center;
+  padding-bottom:24px;
+}
+
+.header {
+  // height: 44px;
+  // line-height: 44px;
+  margin-top: 20px;
+  // margin-bottom: 6px;
+  // a {
+  //   text-decoration: none;
+  // }
+}
+
+.logo {
+  height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.logo_1 {
+  height: 80px;
+  margin-top: 0px;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @heading-color;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.desc {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  color: @text-color-secondary;
+  font-size: @font-size-base;
+}
+
+.main {
+  width: 328px;
+  margin: 0 auto;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+    max-width: 328px;
+  }
+
+  :global {
+    .@{ant-prefix}-tabs-nav-list {
+      margin: auto;
+      font-size: 16px;
+    }
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(233, 221, 221, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+    .register {
+      float: right;
+    }
+  }
+
+  .prefixIcon {
+    color: @primary-color;
+    font-size: @font-size-base;
+  }
+}

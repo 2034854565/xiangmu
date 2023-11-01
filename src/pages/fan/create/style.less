@@ -1,0 +1,92 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  // background-color: white;
+  // padding: 30px;
+  min-height: inherit;
+}
+
+.card {
+  margin-bottom: 24px;
+
+  :global {
+    .ant-legacy-form-item .ant-legacy-form-item-control-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.inputNum {
+  :global .ant-input-number {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
+.centerButton {
+  text-align: center;
+  scrollbar-gutter: 6;
+
+}
+
+.flieContent {
+  width: 100%;
+  height: calc(100% - 42px);
+}
+
+.filePdf {
+  width: 100%;
+  height: calc(100% - 84px);
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.filePdfFooter {
+  height: 42px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filePdfPage {
+  margin: 0 10px;
+}
+
+.siteInputGroupWrapper .siteInputSplit {
+  background-color: #ffffff !important;
+}
+
+.siteInputGroupWrapper .siteInputRight {
+  border-left-width: 0;
+}
+
+.siteInputGroupWrapper .siteInputRight:hover,
+.siteInputGroupWrapper .siteInputRight:focus {
+  border-left-width: 1px;
+}
+
+.siteInputGroupWrapper .ant-input-rtl.siteInputRight {
+  border-right-width: 0;
+}
+
+.siteInputGroupWrapper .ant-input-rtl.siteInputRight:hover,
+.siteInputGroupWrapper .ant-input-rtl.siteInputRight:focus {
+  border-right-width: 1px;
+}
+
+.inputGroupCompact :global {
+  .ant-input-group.ant-input-group-compact {
+    display: flex;
+  }
+
+
+}
